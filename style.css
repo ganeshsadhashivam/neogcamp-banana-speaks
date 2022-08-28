@@ -1,26 +1,67 @@
-h1{
-  margin:1rem;
-  border:1px solid black;
-  padding: 1rem;
-  background-color: deepskyblue;
+
+body{
+  margin:0;
+
+}
+:root{
+  --primary:deepskyblue;
+  --black:#333333;
+  --width-break:600px;
+}
+
+
+*{
+  box-sizing: border-box;
+}
+
+main{
+  margin:auto;
+  padding:1rem;
+  max-width: var(--width-break);
+}
+.header{
+  background-color:var(--primary);
   text-align: center;
 }
 
-.container{
-  margin:0 auto;
-}
-
 textarea {
-    width: 80%;
-    height: 10vh;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 20vh;
     display: block;
-    margin: 1rem;
+    margin-top: 2rem;
+    font-size: large;
+  }
+
+  button{
+    background-color: var(--primary);
+    border:0;
     padding: 1rem;
+    margin:1rem 0rem;
   }
   #output {
-    border: 1px solid black;
+
+    
+    border: 1px solid var(--black);
     height: 10vh;
-    width: 80%;
-    margin: 1rem;
+    width: 100%;
+    min-height: 20vh;
+    margin: 1rem 0rem;
     padding: 1rem;
-  }
+    overflow:scroll;
+}
+
+footer{
+    position: fixed;
+  width:100%;
+  padding:1rem;
+  background-color: var(--primary);
+  text-align: center;
+  bottom:0;
+}
+
+footer p{
+  max-width: var(--width-break);
+  margin:auto;
+}
+
