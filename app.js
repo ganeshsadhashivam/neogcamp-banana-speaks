@@ -8,7 +8,7 @@ var userInput = document.querySelector("#txt-input");
 
      
 
-//var serverURL ="https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json";
+
 
 var serverURL = "https://api.funtranslations.com/translate/minion.json";
 
@@ -19,7 +19,7 @@ function getTranslationURL(text){
 
 
 function errorHandler(error){
-     console.log("error occured",error);
+     //console.log("error occured",error);
      alert("something wrong in server try again after some time");
 }
 
